@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="「课表」小程序"/>
+    <meta name="keywords" content="Coda,Hadestack"/>
+    <meta name="author" content="Hades"/>
+    <title>课表</title>
+    <meta property="og:title" content="kb weapp"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://kb.mayuko.cn/"/>
+    <meta property="og:description" content="烟大学生自己的课表小程序"/>
+    <meta property="og:locale" content="zh-CN"/>
+    <meta property="og:locale:alternate" content="en-US"/>
+    <meta property="og:site_name" content="课表,课程表格"/>
+    <meta name="apple-mobile-web-app-title" content="kb"/>
+    <link rel="shortcut icon" href="https://blog.mayuko.cn/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/james_typography.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.fullpage.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="nav navbar-right">
+            <input type="text" value="s" style="display:none;" id="t2s">
+            <a class="navbar-brand" id="s2t-btn">
+                <div id="s2t">
+                    <li class="icon-exchange"></li>&nbsp;切換為繁體
+                </div>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div id="fullpage">
+    <div class="section color-grey">
+        <div class="container-fluid align-center v-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 home_content">
+                    <h2>「课表」</h2>
+                    <p>烟大学生自己的课表小程序</p>
+                    <a class="btn btn-default" role="button" data-toggle="collapse" href="#kb-qr"
+                       aria-expanded="false" aria-controls="collapseExample">扫码体验</a>
+                    <div class="collapse" id="kb-qr">
+                        <div class="section color-grey">
+                            <img src="images/kb.jpg" style="margin: 20px 0;width: 200px;height: auto">
+                        </div>
+                    </div>
+                    <img src="images/header.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section color-white">
+        <div class="div-h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h3>今日</h3>
+                        <p>「今日」视图由不同的卡片构成，你可以在不同的卡片中查看今日所有的信息。</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row today-item">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="images/today-1.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <h4>1 日历卡片</h4>
+                        <p>在日历卡片中，同学可以很方便的了解到今天是周几，是第几周。</p>
+                    </div>
+                </div>
+                <div class="row today-item">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="images/today-2.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <h4>2 功能卡片</h4>
+                        <p>所有的功能将在功能卡片中呈现，同学可以选择不同的功能。</p>
+                    </div>
+                </div>
+                <div class="row today-item">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="images/today-3.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <h4>3 课程卡片</h4>
+                        <p>当你在「我的」页面中绑定了我的班级信息后，今天的课程将在这里呈现出来。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section color-grey">
+        <div class="div-h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <h3>课表查询</h3>
+                        <p>「课表」使用了学校公开的课程数据，进行整理并展示。</p>
+                        <p>支持今日课表和全部课表两种展示方式，并且，你还可以将当日课表分享给其他同学。</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="images/kb-1.png" alt="" class="img-responsive today-card">
+                    </div>
+                </div>
+                <p class="readmore"><a href="https://blog.mayuko.cn/archives/2604/" target="_blank">了解分享课表的更多功能»</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section color-black animationEnd">
+        <div class="container">
+            <div class="div-h">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="color: #ffffff">
+                        <h3>成绩查询</h3>
+                        <p>「课表」支持期末成绩查询，第一次查询时需要绑定学号。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="images/score-1.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="images/score-2.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="color:#ffffff;">
+                        <h5>我的密码保存在哪里了？</h5>
+                        <p>密码只会保存在你的本地存储上，不会再任何服务器进行保存。</p>
+                        <h5>成绩的数据来源可靠吗？</h5>
+                        <p>当然，只要官方数据没有出错的话。成绩数据全部抓取自学校的官方成绩查询公众号，所以可以很放心数据来源。</p>
+                        <p class="readmore"><a href="https://blog.mayuko.cn/archives/2685/"
+                                               target="_blank">了解成绩查询的更多功能»</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APP Section -->
+    <div class="section color-white">
+        <div class="div-h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <h3>空闲教室</h3>
+                        <p>「课表」不仅支持成绩和课程查询，还支持空闲教室查询，方便你找到自习教室。</p>
+                        <p class="readmore"><a href="https://blog.mayuko.cn/archives/2685/"
+                                               target="_blank">了解空闲教室更多信息»</a>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <img src="images/room-1.png" alt="" class="img-responsive today-card">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <img src="images/room-2.png" alt="" class="img-responsive today-card">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section color-grey">
+        <div class="div-h">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h3>「我的」视图</h3>
+                        <p>在「我的」视图中，可以设置我的班级信息或者清除本地存储</p>
+                        <p>如果你在使用中有任何的 BUG，可以点击反馈旁边的按钮进行反馈</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="images/mine-1.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="images/mine-2.png" alt="" class="img-responsive today-card">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="images/mine-3.png" alt="" class="img-responsive today-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section color-white">
+        <div style="margin-top: 100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h3>加入内测计划</h3>
+                        <p>你将第一时间体验到最新的「课表」。</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <a href="mailto:i@mayuko.cn" class="btn btn-default btn-item">加入内测</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h3>一些问题及版本记录</h3>
+                        <p>查看「课表」的版本记录。</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <a class="btn btn-default btn-item" role="button" data-toggle="collapse" href="#update-log" aria-expanded="false" aria-controls="update-log">版本记录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section color-black collapse" style="color:#ffffff;" id="update-log">
+        <div class="div-h">
+            <div class="container">
+                <div class="update-item">
+                    <h4>v2.0.1</h4>
+                    <ul>
+                        <li>抱歉地通知大家，由于某种不可抗拒的原因，我们关闭了期末成绩查询入口。</li>
+                        <li>移除：期末成绩查询功能</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v2.0.0</h4>
+                    <ul>
+                        <li>全新的「课表」小程序来啦！</li>
+                        <li>新增：「今日」视图，可以快速查看我的课表和日历</li>
+                        <li>新增：增加个人课表显示，绑定后将在「今日」视图显示我的课表信息</li>
+                        <li>修改：重新设计的课表查询、教室查询</li>
+                        <li>修改：主页页面优化显示</li>
+                        <li>修改：解决主页无法自动刷新的BUG</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.2.1</h4>
+                    <ul>
+                        <li>修改：优化成绩显示</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.2.0</h4>
+                    <ul>
+                        <li>新增：增加烟大期末成绩查询</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.1.1</h4>
+                    <ul>
+                        <li>新增：增加空闲教室学校选择</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.1.0</h4>
+                    <ul>
+                        <li>新增：增加文经课表数据，文经学院的同学也可以查询课表啦</li>
+                        <li>修改：课表显示细节优化</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.0.5</h4>
+                    <ul>
+                        <li>新增：增加本地存储，方便二次查询</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.0.4</h4>
+                    <ul>
+                        <li>修改：解决底部tabBar安卓端显示不一致问题</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.0.3</h4>
+                    <ul>
+                        <li>修改：解决空闲教室节次缺失问题</li>
+                        <li>修改：重新设计的课程显示，优化课表显示</li>
+                        <li>修改：优化空闲教室显示</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h4>v1.0.2</h4>
+                    <ul>
+                        <li>主体功能完成</li>
+                        <li>新增：增加查询空闲教室功能</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section color-white">
+        <div style="margin-bottom: 120px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <h3>更多功能</h3>
+                        <p>个人课表等功能正在全力开发中...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section color-black">
+        <div style="padding-top: 120px;padding-bottom: 10px;">
+            <div class="container color-title-white">
+                <p class="align-center">如果你在使用中遇到了任何的问题，可以发送邮件到：</p>
+                <h4 class="align-center">i@mayuko.cn</h4>
+            </div>
+            <div class="container-fluid color-title-white text-center">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                        <ul class="list-inline">
+                            <li class="href-btn">
+                                <a href="https://blog.mayuko.cn/" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-globe"></i></h4>
+                                </a>
+                            </li>
+                            <li class="href-btn">
+                                <a href="http://blog.csdn.net/mayuko2012" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-rss"></i></h4>
+                                </a>
+                            </li>
+                            <li class="href-btn">
+                                <a href="https://github.com/mayuko2012" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-github"></i></h4>
+                                </a>
+                            </li>
+                            <li class="href-btn">
+                                <a href="https://twitter.com/mayuko2012" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-twitter"></i></h4>
+                                </a>
+                            </li>
+                            <li class="href-btn">
+                                <a href="http://vscom.mayuko.cn/" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-camera"></i></h4>
+                                </a>
+                            </li>
+                            <li class="href-btn">
+                                <a href="mailto:i@mayuko.cn" class="color-title-white">
+                                    <h4 class="aboutMeFont"><i class="icon-envelope"></i></h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                        <img src="images/kb-qr.jpg" alt="qrcode" class="img-responsive text-center"
+                             style="width: 80px;clear: both;display: block;margin:auto; ">
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>我是邵帅，「课表」是一款微信小程序。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.s2t.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>

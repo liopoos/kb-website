@@ -1,0 +1,146 @@
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+.href-btn{
+    padding-left: 30px;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.align-center {
+    text-align: center
+}
+
+.align-left {
+    text-align: left
+}
+
+.align-right {
+    text-align: right
+}
+
+.float-left {
+    float: left
+}
+.home_content {
+    padding-top: 10rem;
+}
+
+.photo-w {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+.app-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-h {
+    padding-top: 120px;
+    padding-bottom: 100px
+}
+
+.readmore {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.blog-card {
+    display: block;
+    font-size: 1rem;
+    width: auto;
+    margin-bottom: 1.5rem;
+}
+
+.blog-img:hover {
+    transform: scale(1.05);
+}
+.photo-z:hover{
+    transform: scale(1.05);
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+#postStatus{
+    font-size: 14px;
+    padding-top: 9px;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+.navbar {
+    margin-bottom: 0px;
+    background: #f2f2f5;
+}
+.navbar:hover {
+    cursor: pointer;
+}
+.navbar-brand {
+    font-size: 12px;
+    color: #000;
+}
+a:focus, a:hover {
+    color: #337AB7;
+    text-decoration: none;
+}
+.copyright{
+    font-size: 10px;
+    color: #8c8c8c;
+}
+.color-grey {
+    background: #f2f2f5;
+}
+
+.color-white {
+    background: #ffffff;
+}
+
+.color-black {
+    background: #171717;
+}
+
+.color-title {
+    color: #8c8f94;
+}
+
+.color-title-white {
+    color: #ffffff;
+}
+.color-title-black{
+    color: #171717;
+}
+.today-card{
+    border: 2px solid #eaedee;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.today-item{
+    margin: 20px 0;
+}
+.today-item > h4{
+    margin-top: 0px;
+}
+.row{
+    margin-top: 30px;
+}
+.footer > p{
+    margin: 30px 0;
+    font-size: 1rem;
+    color: #fefefe;
+}
+.btn-item{
+    margin-top: 40px;
+}
