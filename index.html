@@ -20,7 +20,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/james_typography.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/jquery.fullpage.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -73,7 +72,7 @@
                         <img src="images/today-0.jpg" alt="" class="img-responsive today-card">
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                        <h4>0 今日卡片</h4>
+                        <h4>0 通知卡片</h4>
                         <p>「课表」的通知卡片，在特定节日中会显示，你也可以选择永久关闭。</p>
                     </div>
                 </div>
@@ -88,7 +87,7 @@
                 </div>
                 <div class="row today-item">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                        <img src="images/today-2.png" alt="" class="img-responsive today-card">
+                        <img src="images/today-2.jpg" alt="" class="img-responsive today-card">
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                         <h4>2 功能卡片</h4>
@@ -115,23 +114,6 @@
 
     </div>
 
-    <div class="section color-black animationEnd">
-        <div class="container">
-            <div class="div-h">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <img src="images/new.jpg" alt="" class="img-responsive today-card">
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8" style="color: #ffffff">
-                        <h3>v2.0.4新功能</h3>
-                        <p>v2.0.4版本中，课表增加了一个新功能：可以隐藏或显示你希望查看的卡片。</p>
-                        <p class="readmore"><a href="http://mp.weixin.qq.com/s/JeYw-5bKFm_k_58QRo3a-w" target="_blank">更多新功能介绍»</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="section color-grey">
         <div class="div-h">
             <div class="container">
@@ -144,13 +126,13 @@
                             <h5>想使用课程数据？</h5>
                             <p>Api Center开放了烟台大学及烟台大学文经学院所有院系的课程数据，你可以访问<a href="https://api.mayuko.cn/!13"
                                                                            target="_blank">这里</a>来查询如何获取这些数据。</p>
+                            <p class="readmore"><a href="https://blog.mayuko.cn/archives/2604/" target="_blank">了解分享课表的更多功能»</a></p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <img src="images/kb-1.png" alt="" class="img-responsive today-card">
                     </div>
                 </div>
-                <p class="readmore"><a href="https://blog.mayuko.cn/archives/2604/" target="_blank">了解分享课表的更多功能»</a></p>
             </div>
         </div>
     </div>
@@ -218,6 +200,25 @@
             </div>
         </div>
     </div>
+
+    <div class="section color-black">
+        <div class="container">
+            <div class="div-h">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="images/calendar.png" alt="calendar1" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8" style="color: #ffffff">
+                        <h3>校历</h3>
+                        <p>我们将烟台大学2017-2018第一学期6个月的校历放在了「课表」中。</p>
+                        <p>学期中假期和节日都将在日期中显示。</p>
+                        <p>同时，你可以很方便的将校历分享给其他同学。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section color-grey">
         <div class="div-h">
             <div class="container">
@@ -225,7 +226,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                         <h3>「我的」视图</h3>
                         <p>在「我的」视图中，可以设置我的班级信息或者清除本地存储</p>
-                        <p>如果你在使用中有任何的 BUG，可以点击反馈旁边的按钮进行反馈</p>
+                        <p>v2.1.0开始，「课表」第一次使用时将不再自动获取用户信息，需要用户进行手动授权。</p>
                     </div>
                 </div>
                 <div class="row">
@@ -237,6 +238,43 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <img src="images/mine-3.png" alt="" class="img-responsive today-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section color-black">
+        <div class="container">
+            <div class="div-h">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="images/share-1.png" alt="calendar1">
+                                </div>
+                                <div class="item">
+                                    <img src="images/share-2.png" alt="calendar2">
+                                </div>
+                                <div class="item">
+                                    <img src="images/share-3.jpg" alt="calendar2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8" style="color: #ffffff">
+                        <h3>分享</h3>
+                        <p>在「课表」中，你可以几乎将所有的页面分享出去。</p>
+                        <p>得益于微信小程序的参数页面，同学问你下节课在哪上课，你可以直接把当天的课表发给他，朋友问你想去哪里去上自习，直接发给她空闲教室，让她去选择喜欢的教室。</p>
+                        <p>目前支持「课表」分享的页面有：某个班级的课表、校历、某节课空闲教室。</p>
+                        <p class="readmore"><a href="https://blog.mayuko.cn/archives/2604/"
+                                               target="_blank">了解分享的更多功能»</a></p>
                     </div>
                 </div>
             </div>
@@ -272,6 +310,15 @@
     <div class="section color-black collapse" style="color:#ffffff;" id="update-log">
         <div class="div-h">
             <div class="container">
+                <div class="update-item">
+                    <h4>v2.1.0</h4>
+                    <ul>
+                        <li>新增：烟台大学2017-2018第一学期校历</li>
+                        <li>新增：功能页面（实验室）</li>
+                        <li>修改：修改用户默认授权方式为手动授权，已授权的用户无需再次授权</li>
+                        <li>修改：修改部分样式</li>
+                    </ul>
+                </div>
                 <div class="update-item">
                     <h4>v2.0.4</h4>
                     <ul>

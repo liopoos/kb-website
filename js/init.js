@@ -2,6 +2,9 @@
  * Created by hades on 2017/6/29.
  */
 $(document).ready(function () {
+    $('.carousel').carousel({
+        interval: 2000
+    })
     $("#s2t-btn").click(function () {
         if ($('#t2s').val() == "s") {
             $('html').s2t();
