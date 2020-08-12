@@ -11,8 +11,7 @@
 
 # 介绍
 
-- [第一个小程序 「课表」](https://blog.mayuko.cn/archives/2604/)
-- [「课表」v2.0](https://blog.mayuko.cn/archives/2685/)
+- [「课表」v3.0](https://blog.mayuko.cn/develop/kbweapp-version-3/)
 
 
   
